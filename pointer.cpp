@@ -8,15 +8,18 @@ int main()
 	int N = 0;
 	std::cout << "Input size of array :";
 	std::cin >> N;
-
+	//выделяем память под одномерный массив динамически
 	pArray = new int[N];
+	
+	//обращение к элементам - способ 1
 	for (int i = 0; i < N; i++)
 		pArray[i] = i;
 	
 	std::cout << "array-1 \n";
 	for (int i = 0; i < N; i++)
 		std::cout<<pArray[i] <<std::endl;
-
+	
+	//обращение к элементам - способ 2
 	std::cout << "array-2 \n";
 	for (int i = 0; i < N; i++)
 		*(pArray+i) = i+i;
@@ -27,7 +30,7 @@ int main()
 	delete []  pArray;
 
 	
-
+	//Создание двумерного динамического массива
 	int m, n; 
 	m = n = 0;
 	std::cout << "Matrix - Input number of string :";
@@ -51,4 +54,9 @@ int main()
 					std::cout<<massive[i][j] <<"\t";
 		std::cout << "\n";
 	}
-		
+	//Удаление маасива - очистка памяти
+	for (int i = 0; i < m; i++) {
+        	delete [] massive[i];
+    	}
+   	delete [] massive;
+}
