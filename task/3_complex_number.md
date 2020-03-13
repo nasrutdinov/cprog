@@ -1,18 +1,19 @@
 ## Создание класса  комплексные числа
 
-Необходимо реализовать класс Complex для работы с комплексными числами. Комплексное число имеет вид a+b*i, где a - действительная часть числа, b - мнимая часть числа. При операциях с комплексными числами предполагается, что i^2=−1. 
-class complex
-{
-private:
-    double Re, Im;
+Необходимо реализовать класс Complex для работы с комплексными числами. Комплексное число имеет вид a+bi, где a - действительная часть числа, b - мнимая часть числа. При операциях с комплексными числами предполагается, что i^2=−1. 
 
-public:
-    complex();
-    complex(double x);
-    complex(double x, double y);
-    double re() {return Re;}
-    double im() {return Im;}
-};
+    class complex
+    {
+    private:
+     double Re, Im;
+    
+    public:
+        complex();
+       complex(double x);
+     complex(double x, double y);
+     double re() {return Re;}
+     double im() {return Im;}
+    };
 
 Упражнения
 A: Конструкторы и инкапсуляция
