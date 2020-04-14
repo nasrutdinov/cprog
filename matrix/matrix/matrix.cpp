@@ -7,8 +7,12 @@
 
 class Matrix {
 public:
-	float elements[3][3];
+	int size;
+	//данные надо убрать в private и сделать в виде динамического массива
+	//float elements[3][3];
+	float **elements;
 	Matrix();
+	// Пример https://prog-cpp.ru/cpp-operator/
 	friend  Matrix operator + (Matrix &A, const Matrix &B);
 };
 
@@ -47,16 +51,20 @@ int main()
 		std::cout << "\n";
 	}
 
-
+	getchar();
 
 
   
 }
 
 Matrix::Matrix() {
+	elements = new  float *[3];
+	for (int i=0;i<3;i++)
+		elements[i]= new float[3];
+
 	for (int i = 0; i < 3; i++)
 		for (int j = 0; j < 3; j++)
-			this->elements[i][j] = 0;
+			elements[i][j] = 0;
 }
 
 Matrix operator + (Matrix &A, const Matrix &B) {
