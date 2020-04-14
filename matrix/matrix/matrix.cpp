@@ -6,19 +6,23 @@
 
 
 class Matrix {
+private:
+//данные надо убрать в private и сделать в виде динамического массива
 public:
-	int size;
-	//данные надо убрать в private и сделать в виде динамического массива
-	//float elements[3][3];
+	int row, column;
 	float **elements;
-	Matrix();
+	Matrix() {};
+	//конструктор для квадратных матриц
+	Matrix(int);
+	Matrix(int, int);
+	void print();
 	// Пример https://prog-cpp.ru/cpp-operator/
 	friend  Matrix operator + (Matrix &A, const Matrix &B);
 };
 
 int main()
 {
-	Matrix A, B;
+	Matrix A(3,3), B(3);
 
 	for (int i = 0; i < 3; i++)
 		for (int j = 0; j < 3; j++)
@@ -28,48 +32,64 @@ int main()
 		for (int j = 0; j < 3; j++)
 			B.elements[i][j] = i+j;
 
-	std::cout << "B= \n";
+	/*std::cout << "B= \n";
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 3; j++)
 			std::cout << B.elements[i][j] << "\t";
 		std::cout << "\n";
-	}
+	}*/
+	B.print();
 
 	std::cout << "A=  (before) \n";
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 3; j++)
-			std::cout << A.elements[i][j] << "\t";
-		std::cout << "\n";
-	}
+	A.print();
 
 	A = A + B;
 
 	std::cout << "A= (after) \n";
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 3; j++)
-			std::cout << A.elements[i][j] << "\t";
-		std::cout << "\n";
-	}
+	A.print();
 
-	getchar();
+	//getchar();
 
 
   
 }
 
-Matrix::Matrix() {
-	elements = new  float *[3];
-	for (int i=0;i<3;i++)
-		elements[i]= new float[3];
 
-	for (int i = 0; i < 3; i++)
-		for (int j = 0; j < 3; j++)
+Matrix::Matrix(int row, int column) {
+	this->row = row;
+	this->column = column;
+	elements = new float*[row];
+	for (int k = 0; k < row; k++)
+		elements[k] = new float[column];
+
+	for (int i = 0; i < row; i++)
+			for (int j = 0; j < column; j++)
+					elements[i][j] = 0;
+}
+
+Matrix::Matrix(int row) {
+	this->row = row;
+	this->column = row;
+	elements = new float*[row];
+	for (int k = 0; k < row; k++)
+		elements[k] = new float[column];
+
+	for (int i = 0; i < row; i++)
+		for (int j = 0; j < column; j++)
 			elements[i][j] = 0;
 }
 
+void Matrix::print() {
+	for (int i = 0; i < row; i++) {
+		for (int j = 0; j < column; j++)
+			std::cout << elements[i][j] << "\t";
+		std::cout << "\n";
+	}
+}
+
 Matrix operator + (Matrix &A, const Matrix &B) {
-	for (int i = 0; i < 3; i++)
-		for (int j = 0; j < 3; j++)
+	for (int i = 0; i < A.row; i++)
+		for (int j = 0; j < A.column; j++)
 			A.elements[i][j] = A.elements[i][j] + B.elements[i][j];
 	return A;
 }
