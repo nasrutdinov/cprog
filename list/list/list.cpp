@@ -13,7 +13,7 @@ struct list {
 int main()
 {
 	list *p, *start, *finish;
-	//list.x = 11;
+	//list.x = 1;
 	finish = new list;
 	finish->x = 1;
 	finish->next = NULL;
