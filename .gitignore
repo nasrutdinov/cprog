@@ -4,7 +4,6 @@ matrix/matrix/Debug/matrix.tlog/link.command.1.tlog
 *.tlog
 *.filters
 *.vcxproj
-*.cpp
 matrix/matrix/pch.h
 matrix/matrix/matrix.vcxproj.user
 matrix_error/.vs/matrix_error/v15/.suo
