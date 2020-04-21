@@ -7,7 +7,6 @@
 struct list {
 	int x;
 	list *next;
-	//можно убрать и сделать односвязный список 
 	list *pred;
 };
 
