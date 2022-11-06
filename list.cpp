@@ -1,7 +1,6 @@
 ﻿// list.cpp : ручное создание списка (двустороннего)
-//
+// 
 
-#include "pch.h"
 #include <iostream>
 
 struct list {
