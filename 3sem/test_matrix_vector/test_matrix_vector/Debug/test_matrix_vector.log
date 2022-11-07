@@ -1,0 +1,7 @@
+﻿  test_matrix_vector.cpp
+c:\users\marat\documents\github\sem3\test_matrix_vector\test_matrix_vector\test_matrix_vector.cpp(17): warning C4244: =: преобразование "int" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+  test_matrix_vector.vcxproj -> C:\Users\marat\Documents\GitHub\sem3\test_matrix_vector\Debug\test_matrix_vector.exe

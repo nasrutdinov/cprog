@@ -1,0 +1,13 @@
+﻿  pch.cpp
+  ChildFrm.cpp
+  ClassView.cpp
+  FileView.cpp
+  MainFrm.cpp
+  MFCApplication1.cpp
+  MFCApplication1Doc.cpp
+  MFCApplication1View.cpp
+  OutputWnd.cpp
+  PropertiesWnd.cpp
+  ViewTree.cpp
+  Создание кода...
+LINK : fatal error LNK1104: не удается открыть файл "mfc140ud.lib"

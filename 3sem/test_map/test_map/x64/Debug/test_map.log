@@ -1,0 +1,3 @@
+﻿  test_map.cpp
+c:\users\marat\documents\github\sem3\test_map\test_map\test_map.cpp(106): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  test_map.vcxproj -> C:\Users\marat\Documents\GitHub\sem3\test_map\x64\Debug\test_map.exe

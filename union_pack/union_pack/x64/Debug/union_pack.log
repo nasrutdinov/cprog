@@ -1,0 +1,5 @@
+﻿  integrate.cpp
+c:\users\marat\documents\github\cprog\union_pack\union_pack\integrate.cpp(8): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+  union_pack.cpp
+  Создание кода...
+  union_pack.vcxproj -> C:\Users\marat\Documents\GitHub\cprog\union_pack\x64\Debug\union_pack.exe

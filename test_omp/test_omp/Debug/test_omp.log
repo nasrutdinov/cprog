@@ -1,0 +1,3 @@
+﻿  test_omp.cpp
+c1xx : warning C4199: двухэтапный поиск имен не поддерживается для C++/CLI, C++/CX или OpenMP. Используйте /Zc:twoPhase-
+  test_omp.vcxproj -> C:\Users\marat\Documents\GitHub\cprog3\test_omp\Debug\test_omp.exe

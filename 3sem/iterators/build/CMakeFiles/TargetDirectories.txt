@@ -1,0 +1,3 @@
+C:/user/GitPr/cprog/3sem/iterators/build/CMakeFiles/main.dir
+C:/user/GitPr/cprog/3sem/iterators/build/CMakeFiles/edit_cache.dir
+C:/user/GitPr/cprog/3sem/iterators/build/CMakeFiles/rebuild_cache.dir
