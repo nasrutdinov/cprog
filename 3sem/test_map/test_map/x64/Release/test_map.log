@@ -1,7 +1,0 @@
-﻿  test_map.cpp
-C:\Users\marat\Documents\GitHub\sem3\test_map\test_map\test_map.cpp(106,25): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-  Создание кода
-  Previous IPDB not found, fall back to full compilation.
-  All 602 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  Создание кода завершено
-  test_map.vcxproj -> C:\Users\marat\Documents\GitHub\sem3\test_map\x64\Release\test_map.exe
