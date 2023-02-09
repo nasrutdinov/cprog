@@ -1,8 +1,0 @@
-﻿  test_omp.cpp
-c1xx : warning C4199: двухэтапный поиск имен не поддерживается для C++/CLI, C++/CX или OpenMP. Используйте /Zc:twoPhase-
-  Создание кода
-  115 of 136 functions (84.6%) were compiled, the rest were copied from previous compilation.
-    113 functions were new in current compilation
-    6 functions had inline decision re-evaluated but remain unchanged
-  Создание кода завершено
-  test_omp.vcxproj -> C:\Users\marat\Documents\GitHub\sem3\test_omp\x64\Release\test_omp.exe

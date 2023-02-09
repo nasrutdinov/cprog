@@ -1,7 +1,0 @@
-[
-{
-  "directory": "C:/user/GitPr/cprog/vs_test/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -g -o CMakeFiles\\test_vs.dir\\test_vs.cpp.obj -c C:\\user\\GitPr\\cprog\\vs_test\\test_vs.cpp",
-  "file": "C:\\user\\GitPr\\cprog\\vs_test\\test_vs.cpp"
-}
-]

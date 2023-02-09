@@ -1,3 +1,0 @@
-﻿  stack_ex_1.cpp
-C:\user\GitPr\cprog\sem3\stack_ex_1\stack_ex_1\stack_ex_1.cpp(94,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  stack_ex_1.vcxproj -> C:\user\GitPr\cprog\sem3\stack_ex_1\x64\Debug\stack_ex_1.exe

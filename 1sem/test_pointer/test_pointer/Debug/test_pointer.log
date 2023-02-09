@@ -1,5 +1,0 @@
-﻿  test_pointer.cpp
-c:\users\marat\documents\github\sem1\test_pointer\test_pointer\test_pointer.cpp(39): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\marat\documents\github\sem1\test_pointer\test_pointer\test_pointer.cpp(40): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\marat\documents\github\sem1\test_pointer\test_pointer\test_pointer.cpp(89): warning C4244: =: преобразование "int" в "float", возможна потеря данных
-  test_pointer.vcxproj -> C:\Users\marat\Documents\GitHub\sem1\test_pointer\Debug\test_pointer.exe
