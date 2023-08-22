@@ -7,7 +7,11 @@
 
 Варианты установки: MinGW (MSYS2) + VS Code, Visual Studio, Embarcadero Dev-C++ и Dev-C++, replit.com, ...
 
-Первая программа. Типы данных. Простейшие операторы. 
+- https://www.msys2.org/
+- https://code.visualstudio.com/ 
+- https://programel.ru/articles/mingw-visual-studio-code-руководство-для-старта/
+
+Первая программа. Вывод и ввод данных на экран. Простые типы данных. Арифметические операторы.  
 
 
 ## Лекция 2.  Управляющие конструкции 
