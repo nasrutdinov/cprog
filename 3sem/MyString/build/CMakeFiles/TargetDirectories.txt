@@ -1,0 +1,3 @@
+C:/GitPr/cprog/3sem/MyString/build/CMakeFiles/main.dir
+C:/GitPr/cprog/3sem/MyString/build/CMakeFiles/edit_cache.dir
+C:/GitPr/cprog/3sem/MyString/build/CMakeFiles/rebuild_cache.dir

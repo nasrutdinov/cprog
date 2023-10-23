@@ -1,0 +1,3 @@
+C:/GitPr/cprog/3sem/test_sfml/build/CMakeFiles/sfml.dir
+C:/GitPr/cprog/3sem/test_sfml/build/CMakeFiles/edit_cache.dir
+C:/GitPr/cprog/3sem/test_sfml/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+C:/progs/proba2/build_cl/CMakeFiles/main.dir
+C:/progs/proba2/build_cl/CMakeFiles/edit_cache.dir
+C:/progs/proba2/build_cl/CMakeFiles/rebuild_cache.dir
