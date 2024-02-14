@@ -9,7 +9,7 @@ void array_print(std::vector<int> a, int size);
 
 int main()
 {
-    std::ifstream f("D:\\user\\mnasrutd\\sem2\\sort1\\file.txt");
+    std::ifstream f("file.txt");
     
     int size=0;
     f >> size;
