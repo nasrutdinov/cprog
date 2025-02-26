@@ -1,53 +1,93 @@
-#include<iostream>
-#include<chrono>
 
-/* Function to sort array using insertion sort */
-void insertionSort(int arr[], int n)
+#include <iostream>
+#include <vector>
+using namespace std;
+// #include<chrono>
+
+// Слияние двух подмассивов arr[]
+// Левая половина arr[left..mid]
+// Правая половина arr[mid+1..right]
+void merge(vector<int>& arr, int left, int mid, int right)
 {
-    for (int i = 1; i < n; ++i) {
-        int key = arr[i];
-        int j = i - 1;
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
 
-        /* Move elements of arr[0..i-1], that are 
-        greater than key, to one position ahead
-        of their current position */
-        while (j >= 0 && arr[j] > key) {
-            arr[j + 1] = arr[j];
-            j = j - 1;
+    // Create temp vectors
+    vector<int> L(n1), R(n2);
+
+    // Copy data to temp vectors L[] and R[]
+    for (int i = 0; i < n1; i++)
+        L[i] = arr[left + i];
+    for (int j = 0; j < n2; j++)
+        R[j] = arr[mid + 1 + j];
+
+    int i = 0, j = 0;
+    int k = left;
+
+    // Merge the temp vectors back 
+    // into arr[left..right]
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) {
+            arr[k] = L[i];
+            i++;
         }
-        arr[j + 1] = key;
+        else {
+            arr[k] = R[j];
+            j++;
+        }
+        k++;
+    }
+
+    // Copy the remaining elements of L[], 
+    // if there are any
+    while (i < n1) {
+        arr[k] = L[i];
+        i++;
+        k++;
+    }
+
+    // Copy the remaining elements of R[], 
+    // if there are any
+    while (j < n2) {
+        arr[k] = R[j];
+        j++;
+        k++;
     }
 }
 
-void printArr(int arr[], int size){
-    for (int k=0; k<size; ++k){
-        std::cout<<arr[k]<<"\t";
-    }
-    std::cout<<std::endl;
+// begin is for left index and end is right index
+// of the sub-array of arr to be sorted
+void mergeSort(vector<int>& arr, int left, int right)
+{
+    if (left >= right)
+        return;
+
+    int mid = left + (right - left) / 2;
+    mergeSort(arr, left, mid);
+    mergeSort(arr, mid + 1, right);
+    merge(arr, left, mid, right);
 }
 
-int main(){
-    int const size=10;
-    int arr[]={9, 8, 7,6,5,4,3,2,1,0}; 
+// Function to print a vector
+void printVector(vector<int>& arr)
+{
+    for (int i = 0; i < arr.size(); i++)
+        cout << arr[i] << " ";
+    cout << endl;
+}
 
-    std::cout<<"array before sorting \n";
-    printArr(arr, size);
+// Driver code
+int main()
+{
+    vector<int> arr = { 12, 11, 13, 5, 6, 7 };
+    int n = arr.size();
 
-    //замер времени 
-    auto start = std::chrono::steady_clock::now();
+    cout << "Given vector is \n";
+    printVector(arr);
 
-    //сортировка
-    insertionSort(arr,size);
+    mergeSort(arr, 0, n - 1);
 
-    //замер времени
-    auto end = std::chrono::steady_clock::now();   
-    std::chrono::duration<double> elapsed_seconds = end-start;
-
-    //вывод массива и времени работы
-    
-    std::cout << "elapsed time: " << elapsed_seconds.count() << "s\n";
-    std::cout<<"array after sorting \n";
-    printArr(arr, size);
-
+    cout << "\nSorted vector is \n";
+    printVector(arr);
     return 0;
 }
