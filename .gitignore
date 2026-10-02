@@ -65,3 +65,49 @@ cmake-build-*/
 # Xcode
 *.xcodeproj/
 *.xcworkspace/
+
+
+# Вспомогательные файлы LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.ind
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ist
+*.synctex.gz
+
+# Файлы от latexmk
+*.fdb_latexmk
+*.fls
+
+# PDF и прочие выходные форматы
+*.pdf
+*.dvi
+*.ps
+
+# Временные и резервные файлы редакторов
+*~
+*.bak
+*.swp
+*.swo
+\#*\#
+
+# Папки сборки (если используете отдельные директории)
+/build/
+/tmp/
+/output/
+
+# Кэш и настройки IDE (опционально)
+.idea/
+.vscode/
+*.iml
+
