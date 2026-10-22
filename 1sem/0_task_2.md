@@ -37,4 +37,7 @@ https://leetcode.com/problem-list/binary-tree/ Ахо А., Хопкрофт Дж
 14.	https://leetcode.com/problems/symmetric-tree/ 
 15.	https://leetcode.com/problems/balanced-binary-tree/ 
 
+## Требования к оформлению
 
+1. Титульник см Положение [https://kpfu.ru/portal/docs/F_1609652960/21.02.2019_0.1.1.67_08_17_19_Gafurov.I.R._Xalilova.A.N.pdf]
+2. 
